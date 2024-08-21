@@ -1,0 +1,136 @@
+body {
+    background-color: #222831;
+    color: #EEEEEE;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+header {
+    background-color: #393E46;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: #00ADB5 underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0;
+
+}
+
+#contact {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: #393E46;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+}
+
+#title {
+    grid-column: span 4;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+#item {
+    border: 5px #00ADB5 solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    font-size: medium;
+}
+
+#skill {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+#skill h3 {
+    grid-column: span 3;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 0;
+}
+
+.skill {
+    border: 5px #00ADB5 solid;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+main {
+    position: absolute;
+    top: 90px;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+form input {
+    border-radius: 10px;
+    outline: none;
+    border: 3px #00ADB5 solid;
+    background-color: #393E46;
+    color: #EEEEEE;
+}
+
+form button {
+    background-color: #393E46;
+    border: 3px #00ADB5 solid;
+    color: #EEEEEE;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+form button:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+    transition: 0.5s;
+}
+
+form input:focus {
+    color: #222831;
+    background-color: #EEEEEE;
+}

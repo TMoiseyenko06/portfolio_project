@@ -1,64 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <section>
-        <h3>Tim Moiseyenko</h3>
-            <img src="https://th.bing.com/th/id/R.92de5ad27df2dbc33a415036841f1e8a?rik=EW5r0MLuoRGx0A&pid=ImgRaw&r=0" alt="profile picture" width="150">
-            <p>Welcome to my portfolo page</p>
-    </section>
-    <br>
-    <section>
-        <h3>About Me</h3>
-        <ul>
+  </head>
+  <body>
+    <header>
+      <h3>Tim Moiseyenko</h3>
+    </header>
+    <br />
+    <main>
+      <section>
+        <div id="info">
+          <div id="title">About Me</div>
+          <div id="item">
             <li>My Background:</li>
-            <p>I am a person that has always been interested in computers, weather its programming,building, or fixing them.</p>
+            <p>
+              I am a person that has always been interested in computers,
+              weather its programming,building, or fixing them.
+            </p>
+          </div>
+          <div id="item">
             <li>Education:</li>
-                <ul>
-                    <li>Finished high school year of 2024</li>
-                    <li>Currently studying at Coding Temple</li>
-                </ul>
+            <li>Finished high school year of 2024</li>
+            <li>Currently studying at Coding Temple</li>
+          </div>
+          <div id="item">
             <li>My goals for the future:</li>
-            <p>Depending on the circumstances I want to be able to either get a job or at least an internshp when finish my schooling here at cosing temple.</p>
+            <p>
+              Depending on the circumstances I want to be able to either get a
+              job or at least an internshp when finish my schooling here at
+              cosing temple.
+            </p>
+          </div>
+          <div id="item">
             <li>Interests:</li>
-            <ul>
-                <li>Computers in general</li>
-                <li>Volleyball</li>
-                <li>Gym</li>
-                <li>Cooking</li>
-            </ul>
-        </ul>
-    </section>
-    <br>
-    <section>
+            <li>Computers in general</li>
+            <li>Volleyball</li>
+            <li>Gym</li>
+            <li>Cooking</li>
+          </div>
+        </div>
+        <br />
+      </section>
+      <section id="skill">
         <h3>Skills</h3>
-        <ul>
-            <li>Python</li>
-            <li>Flask</li>
-            <li>Javascipt</li>
-            <li>HTML</li>
-            <li>Postman</li>
-            <li>VSCode</li>
-            <li>generally know alot about computers in general</li>
-        </ul>
-    </section>
-    <br>
-    <section>
+        
+          <div class="skill">
+            <img src="https://www.notis.net.au/img/kissclipart-python-clipart-python-pandas-computer-icons-ebb13175125a3674.png" alt="">
+            <h3>Python</h3>
+        </div>
+          <div class="skill">
+            <img src="https://codecapsules.io/wp-content/uploads/2023/08/logo-flask.svg" alt="">
+            <h3>Flask</h3></div>
+          <div class="skill">
+            <img src="https://wisnuputra.xyz/resources/javascript-logo.svg" alt="">
+            <h3>JavaScript</h3>
+        </div>
+          <div class="skill">
+            <img src="https://miro.medium.com/v2/resize:fit:435/1*fnNd53zHlT6ECXtaFYXxYg.png" alt="">
+            <h3>HTML</h3></div>
+          <div class="skill">
+            <img src="https://brandlogos.net/wp-content/uploads/2023/09/postman-logo_brandlogos.net_dsr1l-512x510.png" alt="">
+            <h3>Postman</h3></div>
+          <div class="skill">
+            <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="">
+            <h3>VSCode</h3></div>
+       
+      </section>
+      <section id="contact">
         <h3>Contact</h3>
         <form action="/submit">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" placeholder="Enter name here:" required><br><br>
-            <label for="email">E-Mail:</label><br>
-            <input type="email" id="email" placeholder="Enter E-Mail here:" required><br><br>
-            <label for="message">Message</label><br>
-            <input type="text" id="message" placeholder="Enter your message here:"><br><br>
-            <button type="submit">Send Message</button>
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter name here:"
+            required
+          /><br /><br />
+          <label for="email">E-Mail:</label><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter E-Mail here:"
+            required
+          /><br /><br />
+          <label for="message">Message:</label><br />
+          <input
+            type="text"
+            id="message"
+            placeholder="Enter your message here:"
+          /><br /><br />
+          <button type="submit">Send Message</button>
         </form>
-    </section><br>
-    
-</body>
+      </section>
+    </main>
+  </body>
 </html>
